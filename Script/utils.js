@@ -69,7 +69,7 @@ function drawGlyph(xPos, yPos, radius) {
     let x = (radius / 2) * sin(currentAngle);
     let y = (radius / 2) * cos(currentAngle);
     anodes.push([x, y]);
-    currentAngle += step;
+    currentAngle += 90;
   }
   let anodeCoords = anodes[round(random(0, anodes.length-1))];
   line(anodeCoords[0], anodeCoords[1], anodeCoords[0] + ((radius / 2) * sin(currentAngle)), anodeCoords[1] - ((radius / 2) * cos(currentAngle)));
@@ -77,11 +77,11 @@ function drawGlyph(xPos, yPos, radius) {
   // cathode select
   let cathodes = [];
   
-  for (let pinNumber = 1; pinNumber <= stepFactor / 2; pinNumber++) {
+  for (let pinNumber = 1; pinNumber <= 12 / 2; pinNumber++) {
     let x = (radius - (radius / 4)) * sin(currentAngle);
     let y = (radius - (radius / 4)) * cos(currentAngle);
     cathodes.push([x, y]);
-    currentAngle += step;
+    currentAngle += 45;
   }
   
   fill(0);
