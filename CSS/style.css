@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: black;
+  background-color: rgb(12, 100, 180);
 }
 
 canvas {
@@ -16,9 +16,9 @@ canvas {
 }
 
 main > canvas {
-  z-index: 1;
+  z-index: 0;
   width: min-content;
-  border: 12px solid whitesmoke;
+  border-radius: 3%;
 }
 
 #post-processor {

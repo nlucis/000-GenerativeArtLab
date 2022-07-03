@@ -57,6 +57,12 @@ function setup() {
 
 function draw() {
 
+  // Main foreground
+  push();
+  fill(0);
+  square(20, 20, width - 40, 12);
+  pop();
+
   // Always keep the line below
   applyPostProcess();
 }
