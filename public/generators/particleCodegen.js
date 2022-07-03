@@ -1,0 +1,1 @@
+// Creates a small disc with a randomized pattern of points connected by dots to serve as a unique identifier of a render
